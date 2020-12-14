@@ -4,14 +4,12 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.ssh.insert_key = false
-
   config.vm.provider "virtualbox" do |vb|
     vb.customize ["modifyvm", :id, "--memory", "1024", "--cpus", "1", "--ioapic", "on"]
   end
 
-  config.vm.box = "centos/8"
-  config.vm.box_version = "1905.1"
+  config.vm.box = "ubuntu/bionic64"
+  config.vm.box_version = "20201211.1.0"
 
   config.vm.define "boundary" do |n|
     n.vm.hostname = "boundary"

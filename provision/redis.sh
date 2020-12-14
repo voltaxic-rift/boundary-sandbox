@@ -2,5 +2,6 @@
 
 set -xeu
 
-dnf install -y redis
-systemctl start redis
+add-apt-repository -y ppa:redislabs/redis
+apt update
+apt install -y redis

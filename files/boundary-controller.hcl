@@ -12,7 +12,7 @@ controller {
   # supply the url, or "env://" to name an environment variable
   # that contains the URL.
   database {
-      url = "postgresql://boundary:boundary@172.31.0.11:5432/boundary"
+      url = "postgres://boundary:boundary@172.31.0.11:5432/boundary"
   }
 }
 

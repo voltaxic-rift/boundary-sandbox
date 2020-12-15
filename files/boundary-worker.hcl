@@ -7,11 +7,11 @@ worker {
   # Name attr must be unique across workers
   name = "boundary-worker"
   description = "A default worker created demonstration"
-  address = 127.0.0.1
+  address = "192.168.33.10"
 
   # Workers must be able to reach controllers on :9202
   controllers = [
-    "127.0.0.1"
+    "192.168.33.10"
   ]
 
   public_addr = "192.168.33.10"
